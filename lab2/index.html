@@ -1,19 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lab 2</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess A Number</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <input id="guessInput">
-  <button id="guessButton">Guess</button>
-  <p id ="guessResult">Enter a value</p>
-  <p id="numGuesses">Number of Guesses:</p>
-  <div id="guessHistory">Your Current Guesses Are:</div>
-  <p id = "guessHint">Hint:</p>
-  <button id="playAgainButton" hidden>Play Again</button>
+<header>
+    <h1>Guess the Number!</h1>
+    <!--  This will change based on the max attempts defined in the .js file  -->
+    <h2 id="descriptor" ></h2>
+</header>
+<main>
+    <div>
+        Enter a guess:
+        <label><input type="text" id="playerGuess" size="5"></label>
+        <button id="guessBtn">Guess</button>
+        <br>
+        <button id="resetBtn">Reset</button>
+        <div id="feedback"></div>
+        <div id="previousGuesses"> Previous Guesses:
+            <span id="guesses">
+            </span>
+        </div>
+        <br>
+        <div>
+            <span id="winCounter">
+                Games Won:
+            </span>
+            <br>
+            <span id="lossCounter">
+                Games Lost:
+            </span>
+        </div>
+    </div>
+</main>
 
-<script src="scripts/script.js" defer>
-</script>
+
+<script src = "../../paullert.github.io/lab2/js/index.js" defer></script>
 </body>
 </html>
