@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="styles/index.css">
+        <script src="scripts/index.js" defer></script>
+</head>
+<body>
+<header>Blackjack</header>
+<div class="grid overall">
+    <div>
+        <span id="start">
+        <button id="startBtn" class="button">Start</button>
+        <p><strong>Guide:</strong><br>
+            1. Click Start<br>
+            2. Type Bet Amount (between 30 and 100)<br>
+            3. Click one of the following:<br>
+            <p class="indented">
+                3a. Hit: Player gains card<br>
+                3b. Stand: Give turn to dealer, he hits until 17 or higher<br>
+                3c. Double Down: Double your bet, hit, then stand.<br>
+                3d. Surrender: Give up half your bet, dealer wins<br>
+            </p>
+            4. Once round ends click start again to start a new round<br>
+            For more information, visit the <a href="https://en.wikipedia.org/wiki/Blackjack#Rules_of_play_at_casinos" target="_blank" rel="noopener noreferrer"> Blackjack Wikipedia Article</a>.
+            </p>
+    </span>
+    </div>
+    <div>
+        <div id="dealer" class="flexbox">Dealer Hand:<span id="dealerHand"></span></div>
+        <div id="player" class="flexbox">Player Hand:<span id="playerHand"></span></div>
+    </div>
+    <div id="money">
+        Money:
+        <div id="moneyCounter"></div>
+        Recent Bets:
+        <div id="recentBets" class="indented"></div>
+    </div>
+</div>
+
+
+
+
+
+<div class="grid buttons">
+    <div></div>
+    <div><button id="doubleBtn" class="button">Double Down</button></div>
+    <div><button id="surrenderBtn" class="button">Surrender</button></div>
+    <div class="fill">Current Bet: <span id="currentBet"></span></div>
+    <div class="fill">Current Game Phase: <span id="currentGamePhase"></span></div>
+    <div><button id="hitBtn" class="button">Hit</button></div>
+    <div><button id="standBtn" class="button">Stand</button></div>
+
+
+    <div>
+        <span id="bet">Bet Box:
+            <label><input type="number" id="betInput" min="30" max="100"></label>
+            <span><button id="betBtn" class="button">Bet</button></span>
+        </span>
+    </div>
+</div>
+</body>
+</html>

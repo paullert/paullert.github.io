@@ -1,0 +1,212 @@
+:root {
+    /* Colors */
+    --background-color: DarkOliveGreen;
+    --table-rim: rgba(243, 114, 2, 0.35);
+
+    --surface: #ffffff;
+    --text-contrast: #000000;
+
+    --flexbox-outline-color: #ffffff;
+
+    --button-color: goldenrod;
+    --button-outline-color: darkgoldenrod;
+    --disabled-button-color: #4e4e4e;
+    --disabled-button-outline-color: #000000;
+
+    /* Layout sizes */
+    --flex-box-width: 500px;
+    --flex-box-height: 250px;
+
+    --buttons-outer-column-size: 500px;
+    --buttons-inner-column-size: 200px;
+
+    --overall-outer-column-size: 800px;
+    --overall-inner-column-size: 550px;
+
+    --card-width: 100px;
+    --card-height: 150px;
+
+    /* Spacing scale */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 16px;
+    --space-4: 20px;
+    --space-5: 30px;
+
+    /* Borders & radii */
+    --border-thin: 4px;
+    --border-thick: 5px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+
+    /* Effects */
+    --shadow-1: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --transition: background-color 0.3s ease;
+
+    /* Typography */
+    --base-font-size: 1.5em;
+    --button-font-size: 1.2em;
+    --header-font-size: 2em;
+    --input-font-size: 1.1em;
+
+
+    /* Controls */
+    --button-width: 180px;
+    --button-height: 60px;
+    --input-width: 100px;
+    --input-height: 50px;
+
+
+    /* Other */
+    --table-rim-size: 50px;
+}
+
+body {
+    background-color: var(--background-color);
+    outline: var(--table-rim-size) solid var(--table-rim);
+    background-size: cover;
+    font-size: var(--base-font-size);
+}
+
+/* Shared layout helpers */
+.grid {
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+
+    border: var(--border-thick) solid var(--flexbox-outline-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-1);
+
+    width: var(--flex-box-width);
+    height: var(--flex-box-height);
+    margin: var(--space-4) auto;
+}
+
+.overall {
+    grid-template-columns:
+    var(--overall-outer-column-size)
+    var(--overall-inner-column-size)
+    var(--overall-outer-column-size);
+}
+
+.buttons {
+    grid-template-columns:
+    var(--buttons-outer-column-size)
+    var(--buttons-inner-column-size)
+    var(--buttons-inner-column-size)
+    var(--buttons-outer-column-size);
+    gap: var(--space-1);
+    padding-bottom: var(--space-5);
+}
+
+header {
+    text-align: center;
+
+    font-size: var(--header-font-size);
+    background-color: var(--text-contrast);
+    color: var(--surface);
+    padding: var(--space-5);
+}
+
+.buttons div {
+    display: inline;
+}
+
+/* Buttons */
+.button {
+    font-size: var(--button-font-size);
+    display: flex;
+
+    border: var(--border-thin) solid var(--button-outline-color);
+    border-radius: var(--radius-sm);
+    padding: var(--space-5) var(--space-3);
+    cursor: pointer;
+
+    transition: var(--transition);
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: var(--button-color);
+
+    place-items: center;
+    justify-content: center;
+}
+
+.button--disabled {
+    background-color: var(--disabled-button-color);
+    border-color: var(--disabled-button-outline-color);
+    color: var(--surface);
+    cursor: not-allowed;
+}
+
+/* Bets coloring */
+.positiveBet { color: green; }
+.negativeBet { color: red; }
+
+/* Cards */
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    transition: var(--transition);
+}
+
+/* Panels / sections */
+#start {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    background-color: var(--surface);
+
+}
+
+/* Used to fill in misc grid spaces for text contrast */
+.fill {
+    background-color: var(--surface);
+    width: 320px;
+    padding: var(--space-2);
+}
+
+#money {
+    padding: var(--space-4);
+    background-color: var(--surface);
+}
+
+#moneyCounter {
+    margin-bottom: var(--space-5);
+}
+
+#recentBets {
+    margin-top: var(--space-5);
+    height: 300px;
+    width: 400px;
+}
+
+/* Bet box row */
+#bet {
+    background-color: var(--surface);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+#bet input {
+    width: var(--input-width);
+    height: var(--input-height);
+    font-size: var(--input-font-size);
+}
+
+
+p { margin: 0; }
+
+.indented {
+    margin-left: var(--space-4);
+}
