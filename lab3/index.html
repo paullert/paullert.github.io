@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Quiz</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+    <h1>CSS Quiz</h1>
+</header>
+
+
+<br>
+<!--<label><input type="radio" name="q1" value="font-color">font-color</label>-->
+<!--<label><input type="radio" name="q1" value="text-color">text-color</label>-->
+<!--<label><input type="radio" name="q1" value="text-color">color</label>-->
+<div id = "q1Area">
+    1. What CSS property changes font color?
+</div>
+<div id = "q2Area">
+    <label>
+    2. What HTML Tag contains the content of a web page?
+    <input type="text" placeholder="Enter Tag in Here" id="q2Input">
+</label>
+</div>
+
+<div id = "q3Area">
+    <p>3. What number is greater than 100?</p>
+    <select name="q3" id="q3-container">
+        <option value="1">1</option>
+        <option value="-20">-20</option>
+        <option value="101">101</option>
+        <option value="99">99</option>
+    </select>
+</div>
+<div id = "q4Area">
+    <p>4. Name a number between 1 and 100, and divisible by 7 and 13</p>
+    <input id="q4-input" type="number" min="1" max="100" step="1" value="1" required />
+</div>
+<div id = "q5Area">
+    <span>
+        5. Select which of the following are proper ways to style a header element using the following html. <br>
+        <code>
+            ... <br>
+            &lt;link rel="stylesheet" href="style.css"&gt;<br>
+            &lt;h1&gt;This is a header&lt;/h1&gt; <br>
+            ... <br>
+        </code>
+    </span>
+    <label>
+        <input type="checkbox" name="q5" value="correct1">
+        <code>
+            <em>External CSS File</em><br>
+            h1 {color: red;}
+        </code>
+    </label>
+    <label>
+        <input type="checkbox" name="q5" value="incorrect1">
+        <code>
+            <em>External CSS File</em><br>
+            #h1 {color: red;}
+        </code>
+    </label>
+    <label>
+        <input type="checkbox" name="q5" value="incorrect2">
+        <code>
+        <em>Editing HTML File</em><br>
+            &lt;h1 {color: red;}&gt;This is a header&lt;/h1&gt;
+        </code>
+    </label>
+    <label>
+        <input type="checkbox" name="q5" value="correct2">
+        <code>
+        <em>Editing HTML File</em><br>
+            &lt;style&gt;h1 {color: red;}&lt;/style&gt;<br>
+            &lt;h1&gt;This is a header&lt;/h1&gt;
+        </code>
+    </label>
+    <label>
+        <input type="checkbox" name="q5" value="correct3">
+        <code>
+            <em>Editing HTML File</em><br>
+            &lt;h1 style="color: red;"&gt;This is a header&lt;/h1&gt;
+        </code>
+    </label>
+    <label>
+        <input type="checkbox" name="q5" value="correct4">
+        <code>
+            <em>Editing HTML File</em><br>
+            &lt;style&gt;body {color: red;}&lt;/style&gt;<br>
+            &lt;h1&gt;This is a header&lt;/h1&gt;
+        </code>
+    </label>
+</div>
+<br>
+<button id="submitBtn">Submit Quiz</button>
+<br>
+
+<footer>
+    <p id="scoreText">Your Total Score is: </p>
+    <p id="timesTaken"></p>
+</footer>
+
+
+<script src="index.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+:root {
+    --header-color: navy;
+    --primary-color: #7d9cf6;
+    --secondary-color: #381c8f;
+    --question-background: white;
+}
+
+body {
+    background: linear-gradient(30deg, var(--primary-color), var(--secondary-color));
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    font-family: sans-serif;
+    font-size: 1.2em;
+}
+
+header {
+    background-color: var(--header-color);
+    width: 1000px;
+    margin-bottom: 20px;
+    border: 6px solid #ffffff;
+    border-radius: 20px;
+}
+
+/*!* Main container *!*/
+/*body > * {*/
+/*    max-width: 800px;*/
+/*    width: 100%;*/
+/*}*/
+
+/* Card look */
+#q1Area,
+#q2Area,
+#q3Area,
+#q4Area,
+#q5Area {
+    background: var(--question-background);
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    border: 8px solid black;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 2.5rem;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    margin-top: 8px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Radio & checkbox spacing */
+label {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Code styling */
+code {
+    background: #f8f9fc;
+    padding: 6px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 4px;
+    font-size: 13px;
+}
+
+/* Button */
+#submitBtn {
+    width: 30%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #2e59d9;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#submitBtn:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 8px solid white;
+    background-color: var(--header-color);
+}
