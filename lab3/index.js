@@ -7,9 +7,7 @@ if (timesTaken === null) {
 } else {
     document.getElementById("timesTaken").textContent = `You have taken this quiz ${timesTaken} times.`
 }
-const wrongColor = "red";
-const correctColor = "green";
-const halfWrongColor = "orange";
+
 shuffleQ1Choices();
 
 function shuffleQ1Choices() {
@@ -60,38 +58,38 @@ function gradeQuiz() {
     }
     if (q1Answer === "color") {
         score += 20;
-        q1Area.style.backgroundColor = correctColor;
-        q1Area.style.color = "black";
+        q1Area.classList.add("correct");
+        q1Area.classList.remove("incorrect");
     } else {
-        q1Area.style.backgroundColor = wrongColor;
-        q1Area.style.color = "white";
+        q1Area.classList.add("incorrect");
+        q1Area.classList.remove("correct");
     }
 
     if(q2Answer === "<body>") {
         score+= 20;
-        q2Area.style.backgroundColor = correctColor;
-        q2Area.style.color = "black";
+        q2Area.classList.add("correct");
+        q2Area.classList.remove("incorrect");
     } else {
-        q2Area.style.backgroundColor = wrongColor;
-        q2Area.style.color = "white";
+        q2Area.classList.add("incorrect");
+        q2Area.classList.remove("correct");
     }
 
     if (parseInt(q3Answer) > 100) {
         score+= 20;
-        q3Area.style.backgroundColor = correctColor;
-        q3Area.style.color = "black";
+        q3Area.classList.add("correct");
+        q3Area.classList.remove("incorrect");
     } else {
-        q3Area.style.backgroundColor = wrongColor
-        q3Area.style.color = "white";
+        q3Area.classList.add("incorrect");
+        q3Area.classList.remove("correct");
     }
 
     if (q4Answer == 91) {
         score+= 20;
-        q4Area.style.backgroundColor =  correctColor
-        q4Area.style.color = "black";
+        q4Area.classList.add("correct");
+        q4Area.classList.remove("incorrect");
     } else {
-        q4Area.style.backgroundColor = wrongColor
-        q4Area.style.color = "white";
+        q4Area.classList.add("incorrect");
+        q4Area.classList.remove("correct");
     }
 
     let q5Values = [];
@@ -111,13 +109,17 @@ function gradeQuiz() {
     });
 
     if (q5correctness === 0 ) {
-        q5Area.style.backgroundColor = wrongColor;
-        q5Area.style.color = "white";
+        q5Area.classList.add("incorrect");
+        q5Area.classList.remove("correct");
+        q5Area.classList.remove("partial");
     } else if(q5correctness === 20){
-        q5Area.style.backgroundColor = correctColor;
-        q5Area.style.color = "black";
+        q5Area.classList.add("correct");
+        q5Area.classList.remove("incorrect");
+        q5Area.classList.remove("partial");
     } else {
-        q5Area.style.backgroundColor = halfWrongColor;
+        q5Area.classList.add("partial");
+        q5Area.classList.remove("correct");
+        q5Area.classList.remove("incorrect");
     }
     score += q5correctness;
     document.getElementById("scoreText").textContent = `Your Total Score is ${score}.`
