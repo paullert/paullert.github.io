@@ -77,6 +77,3 @@ function gameOver(hasWon) {
         lossCounter.textContent = `Games Lost: ${gamesLost}`;
     }
 }
-
-function game(hasWon) {
-}
