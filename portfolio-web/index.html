@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Conner - Portfolio</title>
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+    <!-- Google Material Symbols icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+    <!-- Devicon programming language icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Custom styles for small overrides -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="embelishments.css">
+</head>
+<body>
+<!-- Sidebar -->
+<nav class="sidebar bg-dark text-white">
+    <!-- Sidebar title -->
+    <h4 class="text-center">Paul Conner</h4>
+
+    <!-- Sidebar links -->
+    <a href="#about">
+        <span class="material-symbols-outlined">person</span>
+        About
+    </a>
+
+    <a href="#projects">
+        <span class="material-symbols-outlined">folder</span>
+        Projects
+    </a>
+
+    <a href="#courses">
+        <span class="material-symbols-outlined">school</span>
+        Courses
+    </a>
+
+    <a href="#skills">
+        <span class="material-symbols-outlined">code</span>
+        Skills
+    </a>
+
+    <a href="#contact">
+        <span class="material-symbols-outlined">mail</span>
+        Contact
+    </a>
+</nav>
+
+<!-- Main Container -->
+<div class="container my-4">
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome-section mb-4">
+        <div class="card welcome-card p-4 text-center">
+
+            <h1>Welcome to My Portfolio</h1>
+
+            <p class="lead">
+                Hi, I’m Paul Conner. This site is a collection of my projects, skills, and coursework.
+            </p>
+
+            <p>
+                Scroll down to learn more about me and see what I have been building.
+            </p>
+
+            <a href="#about" class="btn btn-primary">Learn More About Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="mb-4">
+        <div class="card about-card p-4">
+
+            <div class="row align-items-center">
+
+                <!-- Left side: image -->
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <img src="images/profile.jpeg"
+                         alt="Photo of Paul Conner"
+                         class="about-image">
+                </div>
+
+                <!-- Right side: text -->
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+
+                    <p class="lead">
+                        Hi, I’m Paul Conner. I enjoy building web applications and learning how to solve problems with code.
+                    </p>
+
+                    <p>
+                       I have developed small scale apps (both web-based and local) and have had minor experience in database management
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mb-4">
+
+        <h2 class="mb-3">Projects</h2>
+        <div class="row g-3">
+            <!-- Movie Project -->
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Simple Movie List Web</h5>
+                        <p class="card-text">A full-stack web application that allows users to browse and manage a collection of
+                            movies. Built with HTML, CSS, and JavaScript.</p>
+                    </div>
+
+                    <!-- Movie image carousel -->
+                    <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Images -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="images/movie/home.png" class="d-block w-100" alt="Movie List Home Screen">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/movie/dashboard.png" class="d-block w-100" alt="Movie List Dashboard">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/movie/search.png" class="d-block w-100" alt="Movie List Search Screen">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/movie/saved.png" class="d-block w-100" alt="Movie List Saved Movies">
+                            </div>
+                        </div>
+
+                        <!-- Previous button -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#movieCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <!-- Next button -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#movieCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Game Project -->
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Game Tracker Web</h5>
+                        <p class="card-text">A web app for tracking video games. Users can add games to a wishlist, add games to a progress tracker,
+                            update their lists, and view their collection.</p>
+                    </div>
+
+                    <!-- Game image carousel -->
+                    <div id="gameCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Images -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="images/game/dashboard.png" class="d-block w-100" alt="Game Tracker Dashboard Screen">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/game/modal.png" class="d-block w-100" alt="Game Tracker Deal Modal">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/game/search.png" class="d-block w-100" alt="Game Tracker Search Screen">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/game/wishlist.png" class="d-block w-100" alt="Game Tracker Wishlist">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/game/progress.png" class="d-block w-100" alt="Game Tracker Progress List">
+                            </div>
+                        </div>
+
+                        <!-- Previous button -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <!-- Next button -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Blackjack Project -->
+            <div class="col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Simple Blackjack Web</h5>
+                        <p class="card-text">An interactive blackjack game built with JavaScript. Includes game logic
+                            and keeps track of wins/losses.</p>
+                    </div>
+                    <!-- Blackjack image carousel -->
+                    <div id="blackjackCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Images -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="images/blackjack/end.png" class="d-block w-100" alt="Blackjack Idle Screen">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/blackjack/active.png" class="d-block w-100" alt="Blackjack Active Game">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="images/blackjack/start.png" class="d-block w-100" alt="Blackjack Game Start">
+                            </div>
+                        </div>
+
+                        <!-- Previous button -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#blackjackCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <!-- Next button -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#blackjackCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="mb-4">
+        <h2 class="mb-3">Courses</h2>
+
+        <div class="list-group">
+
+            <!-- Course 1 -->
+            <div class="list-group-item course-item">
+                <h5>Data Structures</h5>
+                <p>
+                    I am well-informed on data structures such as queues, stacks, lists, graphs, and trees.
+                    I am also knowledgeable on when and how they should be used to make efficient algorithms.
+                </p>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="list-group-item course-item">
+                <h5>Software Design</h5>
+                <p>
+                    I have covered the basics when it comes to developing applications which includes software design patterns and transforming needs into reliable software.
+                </p>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="list-group-item course-item">
+                <h5>Intro to Databases</h5>
+                <p>
+                    I have an intimite knowledge of PSQL databases (and other SQL languages), database design, and database scaling.
+                    I have also covered a little Redis and MongoDB.
+                </p>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="list-group-item course-item">
+                <h5>Analysis of Algorithms</h5>
+                <p>
+                    I have a good grasp when it comes to algorithm design strategies and how to solve new problems.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="mb-4">
+        <h2 class="mb-3">Skills</h2>
+        <p>The following is a list of programming languages that I have used in previous projects</p>
+        <div class="skills-list">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill-item">
+                <i class="devicon-html5-plain colored"></i>
+                <p>HTML</p>
+            </a>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill-item">
+                <i class="devicon-css3-plain colored"></i>
+                <p>CSS</p>
+            </a>
+
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill-item">
+                <i class="devicon-javascript-plain colored"></i>
+                <p>JavaScript</p>
+            </a>
+
+            <a href="https://www.java.com/" target="_blank" class="skill-item">
+                <i class="devicon-java-plain colored"></i>
+                <p>Java</p>
+            </a>
+
+            <a href="https://www.python.org/L" target="_blank" class="skill-item">
+                <i class="devicon-python-plain colored"></i>
+                <p>Python</p>
+            </a>
+
+            <a href="https://www.postgresql.org/" target="_blank" class="skill-item">
+                <i class="devicon-postgresql-plain colored"></i>
+                <p>PostgreSQL</p>
+            </a>
+
+            <a href="https://www.mongodb.com/" target="_blank" class="skill-item">
+                <i class="devicon-mongodb-plain colored"></i>
+                <p>MongoDB</p>
+            </a>
+
+            <a href="https://redis.io/" target="_blank" class="skill-item">
+                <i class="devicon-redis-plain colored"></i>
+                <p>Redis</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mb-4">
+        <div class="card p-3">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me at:</p>
+            <p class="mb-0"><strong>Email:</strong> <a href="mailto:pconner@csumb.edu">pconner@csumb.edu</a></p>
+        </div>
+    </section>
+
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 mt-4">
+    <div class="container">
+        <p class="mb-0">&copy; 2026 Paul Conner. All rights reserved.</p>
+    </div>
+</footer>
+<!-- Bootstrap JS bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

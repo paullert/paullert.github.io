@@ -1,0 +1,28 @@
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to each section */
+section {
+    animation: slideIn 0.8s ease-in;
+}
+
+/* Smooth card motion */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Lift card on hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

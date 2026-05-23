@@ -1,0 +1,142 @@
+/* Basic page settings */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* Main page layout */
+.container {
+    max-width: 1000px;
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+/* Sections */
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    scroll-margin-top: 20px;
+}
+
+/* Cards */
+.card {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.card h2,
+.card h5 {
+    color: #0b3d91;
+}
+
+/* Welcome section */
+.welcome-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.welcome-card {
+    width: 100%;
+}
+
+.welcome-card h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+/* About section */
+.about-card {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* About Me profile image */
+.about-image {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+/* Project cards */
+.project-card {
+    min-height: 500px;
+}
+
+.project-card .carousel-item img {
+    height: 350px;
+    object-fit: cover;
+}
+.project-card .card-body {
+    padding: 25px;
+}
+
+/* Makes carousel buttons easier to see */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* Skills section */
+.logo {
+    height: 100px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-item {
+    width: 100px;
+    text-align: center;
+}
+
+.skill-item i {
+    font-size: 50px;
+}
+
+.skill-item p {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+/* Footer */
+footer {
+    margin-left: 220px;
+    font-size: 0.95rem;
+}
