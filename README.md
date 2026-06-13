@@ -3,9 +3,10 @@ you are viewing the class work of _Paul Conner_.
 
 # Course Work
 ## Global Career Accelerator
-- [Portfolio Website](career-accelerator/1-portfolio-web)
-- [Intel Sustainability](career-accelerator/2-intel-sustainability)
-- [Frans Flowers](career-accelerator/2.5-frans-flowers)
+- [Portfolio Website](https://paullert.github.io/career-accelerator/1-portfolio-web)
+- [Intel Sustainability](https://paullert.github.io/career-accelerator/2-intel-sustainability)
+- [Frans Flowers](https://paullert.github.io/career-accelerator/2.5-frans-flowers)
+- [Intel Sustainability Localization](https://paullert.github.io/career-accelerator/3-intel-sustainability-localization)
 ## CST 336
  - [Lab 1 - Team Page](https://paullert.github.io/lab1)
  - [Lab 2 - Number Guessing Game](https://paullert.github.io/lab2)
