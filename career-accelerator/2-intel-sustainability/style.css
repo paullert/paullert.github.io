@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+}
+
+/* <weight>: Use a value from 300 to 700*/
+/* <uniquifier>: Use a unique and descriptive class name*/
+
+.arimo-font {
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background: #000F28;
+    background: linear-gradient(170deg, rgba(0, 15, 40, 1) 0%, rgba(56, 169, 255, 1) 100%);
+    text-align: center;
+    color: white;
+
+    padding: 2rem 2rem;
+    margin: 0;
+}
+
+#hero hr {
+    border-width: 0;
+    background-color: #9ccaff;
+    width: 300px;
+    height: 2px;
+}
+
+#hero img {
+    height: 50px;
+}
+
+#timeline {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    padding-left: 3rem;
+    margin: 1.5rem 1.2rem;
+}
+
+#timeline div {
+    width: 300px;
+    height: 300px;
+
+    padding: 1.5rem;
+    border: 2px solid black;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px #000F28, 0 6px 20px 0 rgba(0, 154, 255, 0.19);
+
+    position: relative;
+    overflow: hidden;
+}
+
+#timeline h2 {
+    color: #00249e;
+}
+
+/* Full-card overlay backdrop */
+#timeline div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(3, 36, 92, 0.85);
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+/* Show backdrop on hover */
+#timeline div:hover::before {
+    opacity: 1;
+}
+
+/* Text sits above backdrop */
+#timeline p {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+
+    color: white;
+    text-align: center;
+
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    pointer-events: none;
+}
+
+#timeline div:hover p {
+    opacity: 1;
+}
+
+#timeline div img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+}
+
+footer {
+    text-align: center;
+}
